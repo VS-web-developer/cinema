@@ -64,6 +64,7 @@
 					</svg>
 			</a>
 		</div>
+		/*SELECT*/
 		<div class="session container">
 			<div class="session-date date">
 				<span class="session__label">Дата</span>
@@ -76,19 +77,32 @@
 			</div>
 			<div class="session-cinema">
 				<span class="session__label">Кинотеатр</span>
-				<select class="cinema-select select" name="cinema">
-					<option class="select__item"  value="Октябрь, ул. Калужская 28">Октябрь, ул. Калужская 28</option>
-					<option class="select__item"  value="3D IMAX, ул. Первая 1">3D IMAX, ул. Первая	1</option>
-				</select>
+				<div class="cinema-select select">
+					<div class="select__item--selected">Октябрь, ул. Калужская 28</div>
+					<img class="select__arrow"src="img/arrow.svg" alt="arrow">
+				</div>
+				<div class="cinema-items select-items select-items--hidden">
+					<div class="select__item">Октябрь, ул. Ленина 2</div>
+					<div class="select__item">Октябрь, ул. Первая 1</div>
+					<div class="select__item">Октябрь, ул. Калужская 28</div>
+				</div>
 			</div>
+
 			<div class="session-time">
 				<span class="session__label">Время</span>
-				<select class="time-select select" name="cinema">
-					<option class="select__item"  value="12:00">12:00</option>
-					<option class="select__item"  value="17:00">17:00</option>
-				</select>
+				<div class="time-select select">
+					<div class="select__item--selected">12:00</div>
+					<img class="select__arrow"src="img/arrow.svg" alt="arrow">
+				</div>
+				<div class="time-items select-items select-items--hidden">
+					<div class="select__item">12:00</div>
+					<div class="select__item">15:00</div>
+					<div class="select__item">17:00</div>
+				</div>
+
 			</div>
 		</div>
 	</header>
+	<script src="js/select.js"></script>
 </body>
 </html>
