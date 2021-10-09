@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				item.addEventListener('click', () => {
 					select.querySelector('.select__item--selected').textContent = item.textContent;//меняем текст на select
 					itemsBlock.classList.add("select-items--hidden"); // скрываем блок с вариантами
-					arrow.classList.add("select__arrow--rotate"); // переворачиваем стрелочку
+					arrow.classList.remove("select__arrow--rotate"); // переворачиваем стрелочку
 				});
 			});
 		});
