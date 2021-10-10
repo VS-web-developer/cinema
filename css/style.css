@@ -204,3 +204,84 @@ line-height: 35px;
 .select__arrow--rotate{
 	transform: rotate(180deg);
 }
+
+.scheme{
+	background-color: rgba(36, 36, 36, 0.18);
+	border-radius: 10px;
+	margin-bottom: 40px;
+}
+.scheme path:not(.light){
+	fill: rgba(255, 255, 255, 0.2);
+	cursor: pointer;
+}
+.scheme path:not(.light):hover{
+	fill: rgba(255, 255, 255, 0.5);
+}
+.scheme path.booked{
+	fill: rgba(255, 255, 255, 0.05);
+}
+.scheme path.booked:hover{
+	fill: rgba(255, 255, 255, 0.05);
+	cursor: not-allowed;
+}
+
+.legend{
+	display: flex;
+	align-items: center;
+	margin: auto;
+	padding-top: 22px;
+	padding-bottom: 38px;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	max-width: 1024px;
+
+}
+.legend-label{
+	display: flex;
+	align-items: center;
+
+}
+.legend-label + .legend-label{
+	margin-left: 30px;
+}
+.legend__text{
+	margin-left: 15px;
+	color: rgba(255, 255, 255, 0.5);
+}
+.scheme path.active{
+	fill: #FE8E05;
+}
+.scheme path.active:hover{
+	fill: #FE8E05;
+	cursor: pointer;
+}
+.legend-active .legend__text{
+	color: #FE8E05;
+}
+.price{
+	padding-top: 20px;
+	padding-bottom: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.price__label{
+	display: block;
+	font-size: 18px;
+	line-height: 21px;
+	margin-bottom: 12px;
+}
+.price-tag{
+	font-size: 52px;
+	line-height: 61px;
+}
+
+.button{
+	display: block;
+	background: #FE8E05;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 18px;
+	line-height: 21px;
+	padding: 24px 52px;
+	text-decoration: none;
+}
